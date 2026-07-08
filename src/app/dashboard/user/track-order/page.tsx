@@ -523,13 +523,30 @@ const TrackOrderPage = () => {
         )}
 
         {/* Initial empty state */}
-        {!order && !error && !loading && (
+        {/* {!order && !error && !loading && (
           <div className="text-center py-12">
             <div className="w-16 h-16 rounded-2xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center mx-auto mb-4">
               <Package size={28} className="text-gray-300 dark:text-gray-600" />
             </div>
             <p className="text-sm font-medium text-gray-400">
               Enter your Order ID, phone, or email to track your order
+            </p>
+          </div>
+        )} */}
+        {!order && !error && !loading && (
+          <div className="text-center py-14">
+            <div className="w-16 h-16 rounded-2xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center mx-auto mb-4">
+              <Package size={28} className="text-gray-300 dark:text-gray-600" />
+            </div>
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest border border-gray-200 dark:border-gray-700 text-gray-400 mb-3">
+              Coming Soon
+            </span>
+            <h2 className="text-base font-bold text-gray-900 dark:text-white mt-2 mb-1">
+              Order tracking is on the way
+            </h2>
+            <p className="text-sm text-gray-400 max-w-xs mx-auto leading-relaxed">
+              We&apos;re working hard to bring you real-time order tracking.
+              Stay tuned — this feature will be available very soon.
             </p>
           </div>
         )}

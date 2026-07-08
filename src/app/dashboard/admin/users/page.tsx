@@ -470,6 +470,7 @@ const AdminUsersPage = () => {
                         </span>
                       </td>
 
+                      {/*  */}
                       <td className="px-4 py-3.5 hidden lg:table-cell">
                         <div className="flex items-center gap-1 text-xs text-gray-500">
                           <Heart size={11} className="text-red-400" />
